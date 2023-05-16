@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h1>Добавление и удаление элемента на таблице</h1>
+            <form action="#" name="main">
+                <label>
+                    <span>Имя</span>
+                    <input placeholder="Имя" name="name" type="text">
+                </label>
+                <label>
+                    <span>Возраст</span>
+                    <input placeholder="Возраст" name="age" type="number">
+                </label>
+                <button>Добавить</button>
+            </form>
+        </header>
+        <main>
+            <table></table>
+        </main>
+    </div>
+
+    <div class="modal_oyna">
+        <div class="modal_close modal_area"></div>
+        <div class="modal_cont">
+            <div class="modal_close btn">X</div>
+            <div class="modal_content">
+                <div class="previous_view">
+                    <div class="curr name"></div>
+                    <div class="curr age"></div>
+                </div>
+                <label class="change">
+                    <p>Изменить на:</p>
+                    <input id="name" type="text" placeholder="имя">
+                    <input id="age" type="text" placeholder="возраст">
+                    <button>Изменить</button>
+                </label>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
